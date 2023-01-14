@@ -1,0 +1,49 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.navMobile {
+  background-color: $third-color;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1rem;
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  width: 100%;
+  height: max-content;
+  animation: show 0.5s 1 alternate;
+  padding: 2rem;
+  z-index: 1;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.navDesktop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+  color: white;
+}
+
+.navItem {
+  font-family: $title-font;
+  color: $fourth-color;
+  margin: 1rem;
+  text-decoration: none;
+  transition: transform 1s;
+}
+
+.navItem:hover {
+  color: $primary-color;
+  transform: scale(1.1);
+}

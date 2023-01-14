@@ -1,0 +1,12 @@
+.guardaPampaDiv {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 200px;
+  background: url('../../assets/svg/guarda-pampa.svg');
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-clip: border-box;
+  background-attachment: scroll;
+}

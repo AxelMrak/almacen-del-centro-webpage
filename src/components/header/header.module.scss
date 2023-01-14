@@ -6,27 +6,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: 1rem;
   background-color: $third-color;
-}
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  row-gap: 1rem;
-}
-
-.navItem {
-  font-family: $title-font;
-  color: $primary-color;
-  margin: 1rem;
-  text-decoration: none;
-  transition: transform 1s;
-}
-
-.navItem:hover {
-  color: $fourth-color;
-  transform: scale(1.1);
 }

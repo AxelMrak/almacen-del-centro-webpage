@@ -1,0 +1,57 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.historyMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  background-color: $secondary-color;
+}
+
+.historyMainContainer h2 {
+  font-family: $title-font;
+  font-size: $title-size;
+  margin: 3rem;
+}
+
+.ourHistoryContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.ourHistoryContainer img {
+  width: 500px;
+  height: auto;
+  border-radius: 25px;
+}
+
+.ourHistoryContainerTexts {
+  width: 40%;
+}
+
+.ourHistoryContainerTexts h3 {
+  font-family: $title-font;
+  font-size: $title-size;
+}
+
+.ourHistoryContainerTexts p {
+  font-family: $text-font;
+  font-size: $text-size;
+}
+
+@include medium() {
+  .ourHistoryContainer {
+    flex-direction: column;
+  }
+  .ourHistoryContainer img {
+    width: 300px;
+  }
+  .ourHistoryContainerTexts {
+    width: 90%;
+  }
+}
