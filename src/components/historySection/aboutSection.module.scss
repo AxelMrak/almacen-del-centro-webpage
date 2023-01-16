@@ -12,7 +12,12 @@
 }
 
 .aboutMainContainer h2 {
+  color: white;
   font-family: $title-font;
   font-size: $title-size;
   margin: 3rem;
+  background-color: #af7439;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px #8B5E3C;
 }

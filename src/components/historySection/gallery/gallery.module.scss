@@ -1,0 +1,34 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.mySwiper {
+  width: 70%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.mySwiper img {
+  width: 100%;
+  height: 500px;
+}
+
+.galleryMainContainer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.galleryMainContainer h3 {
+  font-family: $title-font;
+  font-size: $title-size;
+}
+
+@include medium() {
+  .mySwiper {
+    width: 90%;
+  }
+
+  .mySwiper img {
+    height: 300px;
+  }
+}

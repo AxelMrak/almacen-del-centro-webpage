@@ -4,7 +4,10 @@ import Gallery from "./gallery/Gallery";
 import History from "./history/History";
 import OurMessage from "./ourMessage/OurMessage";
 
-
+/**
+ * This section contains information and media of brand
+ * @returns 
+ */
 function HistorySection() {
 	return (
 		<section className={styles.aboutMainContainer}>

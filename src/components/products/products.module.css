@@ -1,20 +1,18 @@
-.aboutMainContainer {
+.productsSectionContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 2rem;
-  padding-top: 2rem;
-  background-color: #fdcb9f;
+  text-align: center;
+  margin-top: 3rem;
 }
 
-.aboutMainContainer h2 {
+.productsSectionContainer h2 {
   color: white;
   font-family: "Copperplate", "Montserrat";
-  font-size: 2rem;
-  margin: 3rem;
+  font-size: "Copperplate", "Montserrat";
   background-color: #af7439;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 2px 2px 10px #8B5E3C;
-}/*# sourceMappingURL=aboutSection.module.css.map */
+}/*# sourceMappingURL=products.module.css.map */

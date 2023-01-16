@@ -18,11 +18,12 @@
 .messageMainContainer img {
   width: 200px;
   height: 200px;
-  border: 1px solid $primary-color;
+  border: 4px solid $primary-color;
   border-radius: 100%;
 }
 
 .quote, .nameQuote {
+  line-height: 40px;
   text-align: center;
   width: 70%;
   font-family: $text-font;
