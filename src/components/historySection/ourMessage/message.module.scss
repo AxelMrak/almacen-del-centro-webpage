@@ -1,0 +1,35 @@
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
+
+.messageMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.messageMainContainer h3 {
+  font-family: $title-font;
+  font-size: $title-size;
+  color: $fourth-color;
+}
+
+.messageMainContainer img {
+  width: 200px;
+  height: 200px;
+  border: 1px solid $primary-color;
+  border-radius: 100%;
+}
+
+.quote, .nameQuote {
+  text-align: center;
+  width: 70%;
+  font-family: $text-font;
+  font-size: $text-size;
+  color: $fourth-color;
+}
+
+.quote {
+  font-style: italic;
+}

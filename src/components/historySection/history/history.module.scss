@@ -1,17 +1,6 @@
-.historyMainContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  row-gap: 2rem;
-  background-color: #D1A47D;
-}
+@import '../../../styles/mixins';
+@import '../../../styles/variables';
 
-.historyMainContainer h2 {
-  font-family: "Copperplate", "Montserrat";
-  font-size: 2rem;
-  margin: 3rem;
-}
 
 .ourHistoryContainer {
   display: flex;
@@ -25,6 +14,11 @@
   width: 500px;
   height: auto;
   border-radius: 25px;
+  transition: transform 0.5s;
+}
+
+.ourHistoryContainer img:hover {
+  transform: scale(1.1);
 }
 
 .ourHistoryContainerTexts {
@@ -32,23 +26,25 @@
 }
 
 .ourHistoryContainerTexts h3 {
-  font-family: "Copperplate", "Montserrat";
-  font-size: 2rem;
+  font-family: $title-font;
+  font-size: $title-size;
 }
 
 .ourHistoryContainerTexts p {
-  font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
+  font-family: $text-font;
+  font-size: $text-size;
 }
 
-@media (max-width: 991.98px) {
+@include medium() {
   .ourHistoryContainer {
     flex-direction: column;
   }
+
   .ourHistoryContainer img {
     width: 300px;
   }
+
   .ourHistoryContainerTexts {
     width: 90%;
   }
-}/*# sourceMappingURL=historySection.module.css.map */
+}

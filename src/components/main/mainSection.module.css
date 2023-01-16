@@ -31,14 +31,13 @@
   font-size: 4rem;
   position: -webkit-sticky;
   position: sticky;
-  top: 0%;
+  top: 5%;
   transition: all 1s;
 }
 
 .arrowMainContainer {
-  position: absolute;
+  position: relative;
   bottom: 0%;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;

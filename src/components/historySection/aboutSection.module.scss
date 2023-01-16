@@ -1,0 +1,18 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.aboutMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  padding-top: 2rem;
+  background-color: $secondary-color;
+}
+
+.aboutMainContainer h2 {
+  font-family: $title-font;
+  font-size: $title-size;
+  margin: 3rem;
+}
