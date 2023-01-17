@@ -8,7 +8,9 @@
   justify-content: center;
   row-gap: 2rem;
   padding-top: 2rem;
-  background-color: $secondary-color;
+  background: rgb(234, 182, 136);
+  
+    background: linear-gradient(180deg, rgb(234, 182, 136) 55%, hsla(0, 0%, 100%, 1) 100%);
 }
 
 .aboutMainContainer h2 {
