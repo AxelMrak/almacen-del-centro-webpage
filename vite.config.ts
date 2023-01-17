@@ -15,12 +15,12 @@ export default defineConfig({
 				start_url: "/",
 				icons: [
 					{
-						src: "/favicon.ico",
+						src: "/logo-app.png",
 						type: "image/ico",
 						sizes: "50x50",
 					},
 					{
-						src: "/assets/img/logo.png",
+						src: "/logo-app.png",
 						type: "image/png",
 						sizes: "150x150",
 					},
