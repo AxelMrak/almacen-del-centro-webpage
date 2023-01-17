@@ -1,0 +1,31 @@
+.notFoundContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+}
+
+.notFoundContainer h2 {
+  font-family: "Copperplate", "Montserrat";
+  font-size: 2rem;
+}
+
+.notFoundContainer a {
+  padding: 1rem;
+  background-color: #1b1b1c;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 1px solid white;
+  border-radius: 25px;
+  transition: all 1s;
+}
+
+.notFoundContainer a:hover {
+  transform: scale(1.1);
+  border-color: #1b1b1c;
+  background-color: #FFFFFF;
+  color: #1b1b1c;
+}/*# sourceMappingURL=notFound.module.css.map */

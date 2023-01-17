@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NotFoundPage from "../../pages/404/NotFoundPage";
+import HistoryPage from "../../pages/history/HistoryPage";
 import Homepage from "../../pages/home/Homepage";
+import ProductsPage from "../../pages/products/ProductsPage";
 import Header from "../header/Header";
 import "./App.css";
 
@@ -13,13 +16,13 @@ function App() {
 				{/* TODO:  HomePage */}
 				<Route path="/" element={<Homepage />} />
 				{/* TODO: Historia */}
-				<Route path="/historia" element={<h1>Pendiente...</h1>} />
+				<Route path="/historia" element={<HistoryPage/>} />
 				{/* TODO: Productos */}
-				<Route path="/productos" element={<h1>Pendiente...</h1>} />
+				<Route path="/productos" element={<ProductsPage />} />
 				{/* Ubicacion y contacto */}
-				<Route path="/contacto" element={<h1>Pendiente...</h1>} />
+				{/* <Route path="/contacto" /> */}
 				{/* 404 */}
-				<Route path="*" element={<h1>404...</h1>} />
+				<Route path="*" element={<NotFoundPage />} />
 			</Routes>
 			{/* <Footer /> */}
 		</Router>

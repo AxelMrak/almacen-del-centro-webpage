@@ -1,6 +1,6 @@
 .mySwiper {
   width: 70%;
-  height: auto;
+  height: 100%;
   border-radius: 20px;
 }
 
@@ -12,7 +12,8 @@
 .galleryMainContainer {
   width: 100%;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: -3rem;
 }
 
 .galleryMainContainer h3 {

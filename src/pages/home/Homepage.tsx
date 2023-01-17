@@ -9,7 +9,7 @@ function Homepage() {
 		<>
 			<MainSection />
 			<HistorySection />
-			<Products />
+			<Products isMainPage={true} />
 		</>
 	);
 }

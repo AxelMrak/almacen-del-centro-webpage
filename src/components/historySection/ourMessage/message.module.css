@@ -9,7 +9,7 @@
 .messageMainContainer h3 {
   font-family: "Copperplate", "Montserrat";
   font-size: 2rem;
-  color: #000000;
+  color: #1b1b1c;
 }
 
 .messageMainContainer img {
@@ -25,7 +25,7 @@
   width: 70%;
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
-  color: #000000;
+  color: #1b1b1c;
 }
 
 .quote {

@@ -16,13 +16,13 @@ const Navbar: FC<Props> = ({ desktop }) => {
 			<Link className={styles.navItem} to="/">
 				Inicio
 			</Link>
-			<Link className={styles.navItem} to="/inicio">
+			<Link className={styles.navItem} to="/historia">
 				Nuestra historia
 			</Link>
-			<Link className={styles.navItem} to="/inicio">
+			<Link className={styles.navItem} to="/productos">
 				Productos
 			</Link>
-			<Link className={styles.navItem} to="/inicio">
+			<Link className={styles.navItem} to="/contacto">
 				Contacto
 			</Link>
 		</nav>

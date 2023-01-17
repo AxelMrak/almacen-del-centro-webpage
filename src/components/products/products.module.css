@@ -5,14 +5,32 @@
   justify-content: center;
   text-align: center;
   margin-top: 3rem;
+  row-gap: 1rem;
 }
 
 .productsSectionContainer h2 {
   color: white;
   font-family: "Copperplate", "Montserrat";
   font-size: "Copperplate", "Montserrat";
-  background-color: #af7439;
+  background-color: #A20000;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 2px 2px 10px #8B5E3C;
+}
+
+.productsContainer {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .productsContainer {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=products.module.css.map */
