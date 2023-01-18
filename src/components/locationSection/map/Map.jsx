@@ -1,23 +1,10 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import GoogleMapReact from "google-map-react";
 
-interface PropsMarker {
-	text: string;
-}
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
-const AnyReactComponent = ({ text }: PropsMarker) => <div>{text}</div>;
-
-interface CenterMap {
-  lat: number,
-  lng: number
-}
-
-interface PropsMap {
-	center: CenterMap;
-	zoom: number;
-}
-
-const props: PropsMap = {
+const props = {
 	center: {
 		lat: 10.99835602,
 		lng: 77.01502627,
