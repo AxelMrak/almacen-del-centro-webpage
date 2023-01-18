@@ -9,7 +9,7 @@ const props = {
 		lat: -33.6914754,
 		lng: -65.4678895,
 	},
-	zoom: 11,
+	zoom: 15,
 };
 
 function Map() {
@@ -20,7 +20,7 @@ function Map() {
 				defaultCenter={props.center}
 				defaultZoom={props.zoom}
 			>
-				<AnyReactComponent lat={-33.6914754} lng={-65.4678895} text="Almacén del centro" />
+				<AnyReactComponent lat={-33.6911088} lng={-65.4668014} text="Almacén del centro" />
 			</GoogleMapReact>
 		</div>
 	);
