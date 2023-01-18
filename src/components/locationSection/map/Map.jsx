@@ -15,7 +15,7 @@ const props = {
 
 function Map() {
 	return (
-		<div style={{ height: "70vh", width: "60%" }}>
+		<div style={{ height: "70vh", width: "60%" }} className={styles.mapDiv}>
 			<GoogleMapReact
 				bootstrapURLKeys={{ key: "AIzaSyDovaGlL3mNx1ebXDpqh4sCJB35z8RKFdo" }}
 				defaultCenter={props.center}
