@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import GoogleMapReact from "google-map-react";
+import styles from '../map/map.module.css';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const AnyReactComponent = ({ text }) => <div className={style.marker}>{text}</div>;
 
 const props = {
 	center: {
@@ -14,7 +15,7 @@ const props = {
 
 function Map() {
 	return (
-		<div style={{ height: "90vh", width: "60%" }}>
+		<div style={{ height: "70vh", width: "60%" }}>
 			<GoogleMapReact
 				bootstrapURLKeys={{ key: "AIzaSyDovaGlL3mNx1ebXDpqh4sCJB35z8RKFdo" }}
 				defaultCenter={props.center}
