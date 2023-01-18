@@ -1,14 +1,14 @@
-import React from 'react'
+// import React from 'react'
 
-function Contact() {
-  return (
-    <div className={styles.contactContainer}>
-      <h2>Contáctenos</h2>
-      <div className={styles.}>
+// function Contact() {
+//   return (
+//     <div className={styles.contactContainer}>
+//       <h2>Contáctenos</h2>
+//       <div className={styles.}>
 
-      </div>
-    </div>
-  )
-}
+//       </div>
+//     </div>
+//   )
+// }
 
-export default Contact
+// export default Contact
