@@ -1,11 +1,7 @@
-// import React from 'react'
+import React from "react";
 
-// function ContactSection() {
-//   return (
-//     <div>
-      
-//     </div>
-//   )
-// }
+function ContactSection() {
+	return <div></div>;
+}
 
-// export default ContactSection
+export default ContactSection;
