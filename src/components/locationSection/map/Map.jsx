@@ -3,7 +3,7 @@ import React from "react";
 import GoogleMapReact from "google-map-react";
 import styles from '../map/map.module.css';
 
-const AnyReactComponent = ({ text }) => <div className={style.marker}>{text}</div>;
+const AnyReactComponent = ({ text }) => <div className={styles.marker}>{text}</div>;
 
 const props = {
 	center: {
