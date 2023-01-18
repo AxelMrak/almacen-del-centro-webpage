@@ -1,5 +1,6 @@
 import React from "react";
 import HistorySection from "../../components/historySection/AboutSection";
+import Location from "../../components/locationSection/Location";
 import MainSection from "../../components/main/MainSection";
 import { GuardaPampa } from "../../components/others/GuardaPampa";
 import Products from "../../components/products/Products";
@@ -10,6 +11,7 @@ function Homepage() {
 			<MainSection />
 			<HistorySection />
 			<Products isMainPage={true} />
+			<Location />
 		</>
 	);
 }
