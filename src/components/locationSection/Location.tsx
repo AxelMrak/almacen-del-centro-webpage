@@ -4,7 +4,7 @@ import styles  from '../locationSection/location.module.css';
 function Location() {
 	return (
 		<section className={styles.locationSectionContainer}>
-			<h2>Encuentrenos</h2>
+			<h2>Encuéntrenos</h2>
 			<p>Lavalle 100, Villa Mercedes, San Luis</p>
 			{/* <Map /> */}
 		</section>
