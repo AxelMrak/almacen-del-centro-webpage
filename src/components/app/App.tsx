@@ -8,6 +8,11 @@ import Footer from "../footer/Footer";
 import Header from "../header/Header";
 import "./App.css";
 
+/**
+ * * Main Component who contains all app
+ * ? Shows header, page in route and footer
+ * @returns Main Component
+ */
 function App() {
 	return (
 		<Router>
@@ -15,11 +20,11 @@ function App() {
 				<Header />
 			</div>
 			<Routes>
-				{/* TODO:  HomePage */}
+				{/*  HomePage */}
 				<Route path="/" element={<Homepage />} />
-				{/* TODO: Historia */}
+				{/* Historia */}
 				<Route path="/historia" element={<HistoryPage />} />
-				{/* TODO: Productos */}
+				{/* Productos */}
 				<Route path="/productos" element={<ProductsPage />} />
 				{/* Ubicacion y contacto */}
 				<Route path="/contacto" element={<ContactPage />} />

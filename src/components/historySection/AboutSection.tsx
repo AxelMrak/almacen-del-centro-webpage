@@ -5,8 +5,9 @@ import History from "./history/History";
 import OurMessage from "./ourMessage/OurMessage";
 
 /**
- * This section contains information and media of brand
- * @returns 
+ * * Section component History or about
+ * ? This section contains information and media of brand
+ * @returns History component
  */
 function HistorySection() {
 	return (

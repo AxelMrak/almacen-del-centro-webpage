@@ -1,12 +1,13 @@
-import React from "react";
 import ContactSection from "../../components/contactAndHoursSection/ContactSection";
 
-function ContactPage() {
-	return (
-		<div>
-			<ContactSection />
-		</div>
-	);
-}
+/**
+ * * Page component
+ * @returns Contact page
+ */
+const ContactPage = () => (
+	<>
+		<ContactSection />
+	</>
+);
 
 export default ContactPage;

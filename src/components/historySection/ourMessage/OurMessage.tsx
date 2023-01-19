@@ -1,10 +1,10 @@
-import testPhoto from "../../../assets/img/test-photo.jpeg";
 import styles from "../ourMessage/message.module.css";
+
 /**
- * This component will be included in About
+ * * Sub-section component. Son of About/History section
  * @returns Message sub-section component
- * TODO: I will review the text
  */
+// TODO: Change texts
 function OurMessage() {
 	return (
 		<div className={styles.messageMainContainer}>

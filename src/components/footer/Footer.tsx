@@ -3,8 +3,12 @@ import facebook from "../../assets/svg/facebook96.svg";
 import whatsapp from "../../assets/svg/whatsapp96.svg";
 import phone from "../../assets/svg/phone.svg";
 import styles from "../footer/footer.module.css";
-import { GuardaPampa } from "../others/GuardaPampa";
 
+/**
+ * * Component global footer
+ * ? This is visible in all app
+ * @returns Component footer
+ */
 function Footer() {
 	return (
 		<footer className={styles.footerMain}>

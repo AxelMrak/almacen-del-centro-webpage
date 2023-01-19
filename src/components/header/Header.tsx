@@ -4,17 +4,17 @@ import navIco from "../../assets/svg/menu-ico.svg";
 import Navbar from "../navbar/Navbar";
 import { useEffect, useMemo, useState } from "react";
 
-/** 
- * ? Global component Header 
- * @returns Header
+/**
+ * * Component global header
+ * ? This is visible in all app
+ * @returns Component header
  */
 function Header() {
-
 	// * State Screen's width
 	const [width, setWidth] = useState<number>(0);
-	//* State of Show nav or not
+	// * State of Show nav or not
 	const [isShowNav, setIsShowNav] = useState<boolean>(false);
-
+	// * Memoized state Width. It depends of width value
 	const memoizedWidth = useMemo((): number => innerWidth, [width]);
 
 	//? When the component is mounted, we will obtain the width of screen and set it in the state.
@@ -25,7 +25,7 @@ function Header() {
 		}
 	});
 
-	// Change state
+	// ? State handler
 	const showHiddenNav = () => setIsShowNav(!isShowNav);
 
 	return (

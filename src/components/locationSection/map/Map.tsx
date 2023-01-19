@@ -3,6 +3,11 @@ import React from "react";
 import { Spinner } from "../../others/Spinner";
 import styles from "../map/map.module.css";
 
+/**
+ * * Sub-section component. Son of Location section
+ * ? Shows map embeded 
+ * @returns Map component
+ */
 function Map() {
 	return (
 		<React.Suspense fallback={<Spinner />}>

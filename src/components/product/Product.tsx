@@ -1,5 +1,9 @@
 import styles from '../product/product.module.css';
 
+/**
+ * * Properties in product component
+ * ? Indicates types of props
+ */
 interface Props {
 	name: string;
 	img: string;

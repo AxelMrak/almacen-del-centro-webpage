@@ -1,10 +1,11 @@
 import styles from "../history/history.module.css";
 import antiquePhoto from "../../../assets/img/history-img.webp";
+
 /**
- * This component will be included in About
+ * * Sub-section component. Son of About/History section
  * @returns History sub-section component
- * TODO: I will review the text
  */
+// TODO: Change texts
 function History() {
 	return (
 		<div className={styles.ourHistoryContainer}>

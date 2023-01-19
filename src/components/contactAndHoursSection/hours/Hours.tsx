@@ -1,6 +1,11 @@
 import React from "react";
 import styles from "../hours/hours.module.css";
 
+/**
+ * * Sub-section component. Son of ContactSection.
+ * ? Show business hours
+ * @returns Hours component
+ */
 function Hours() {
 	return (
 		<div className={styles.hoursMainContainer}>

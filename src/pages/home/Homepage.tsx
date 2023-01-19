@@ -4,16 +4,24 @@ import Location from "../../components/locationSection/Location";
 import MainSection from "../../components/main/MainSection";
 import Products from "../../components/products/Products";
 
-function Homepage() {
-	return (
-		<>
-			<MainSection />
-			<HistorySection />
-			<Products isMainPage={true} />
-			<Location />
-			<ContactSection />
-		</>
-	);
-}
+/**
+ * * Page component
+ * ? Is the principal page of the website
+ * @returns HomePage
+ */
+const Homepage = () => (
+	<>
+		{/* Main section */}
+		<MainSection />
+		{/* About section */}
+		<HistorySection />
+		{/* Products section */}
+		<Products isMainPage={true} />
+		{/* Map section */}
+		<Location />
+		{/* Contact section */}
+		<ContactSection />
+	</>
+);
 
 export default Homepage;

@@ -1,9 +1,14 @@
-import React from "react";
 import styles from "../contact/contact.module.css";
 import phone from "../../../assets/svg/phone.svg";
 import whatsapp from "../../../assets/svg/whatsapp.svg";
 import email from "../../../assets/svg/email.svg";
 
+/**
+ * * Sub-section component. Son of ContactSection.
+ * ? Show ways of contact
+ * @returns Contact component
+ */
+// TODO: Change numbers and links
 function Contact() {
 	return (
 		<div className={styles.contactMainContainer}>

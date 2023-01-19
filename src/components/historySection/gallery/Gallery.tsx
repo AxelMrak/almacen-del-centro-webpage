@@ -15,9 +15,11 @@ import "swiper/swiper-bundle.min.css";
 import { Spinner } from "../../others/Spinner";
 
 /**
- * This component will be included in About
+ * * Sub-section component. Son of About/History section
+ * ? Show gallery with Swiper library
  * @returns Gallery component
  */
+// TODO: Change images
 function Gallery() {
 	return (
 		<React.Suspense fallback={<Spinner />}>

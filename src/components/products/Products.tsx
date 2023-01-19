@@ -1,11 +1,15 @@
 import React from "react";
 import Product from "../product/Product";
 import styles from "../products/products.module.css";
-import cuchilleria from '../../assets/img/cuchilleria-img.webp';
-import almacen from '../../assets/img/almacen-img.webp';
-import vinos from '../../assets/img/vinos-img.webp';
-import chacinados from '../../assets/img/chacinados-img.webp';
+import cuchilleria from "../../assets/img/cuchilleria-img.webp";
+import almacen from "../../assets/img/almacen-img.webp";
+import vinos from "../../assets/img/vinos-img.webp";
+import chacinados from "../../assets/img/chacinados-img.webp";
 
+/**
+ * * Two interfaces who do the same thing
+ * ? Indicates types of products component
+ */
 interface Props {
 	isMainPage: boolean;
 }
@@ -16,7 +20,9 @@ interface Product {
 	description: string;
 }
 
-// Array products
+// * Array products
+// ? Array of objects. Each one contains an image, a title and description.
+// TODO: Change products
 const products: Product[] = [
 	{
 		img: cuchilleria,
@@ -43,6 +49,7 @@ const products: Product[] = [
 			"Una amplia variedad de vinos de alta calidad, seleccionados cuidadosamente para ofrecer diferentes opciones de sabores y estilos. Perfectos para disfrutar en ocasiones especiales o para acompañar comidas.",
 	},
 ];
+
 /**
  * ? Component Products
  * @param isMainPage indicates if the component is rendering in the homePage or in the Products page. Is a boolean.
@@ -63,14 +70,14 @@ function Products({ isMainPage }: Props) {
 								description={product.description}
 								key={index}
 							/>
-						) : null )
+						) : null)
 					: products.map((product: Product, index: number) => (
 						<Product
 							name={product.title}
 							img={product.img}
 							description={product.description}
 							key={index}
-						/> ))}
+						/>))}
 			</div>
 		</section>
 	);
