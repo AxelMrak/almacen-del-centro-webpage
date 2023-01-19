@@ -32,6 +32,11 @@
   font-size: 1.5rem;
 }
 
+@media (max-width: 575.98px) {
+  .ourHistoryContainer img {
+    width: 50vw;
+  }
+}
 @media (max-width: 991.98px) {
   .ourHistoryContainer {
     flex-direction: column;
@@ -41,5 +46,10 @@
   }
   .ourHistoryContainerTexts {
     width: 90%;
+  }
+}
+@media (max-width: 1199.98px) {
+  .ourHistoryContainer img {
+    width: 400px;
   }
 }/*# sourceMappingURL=history.module.css.map */

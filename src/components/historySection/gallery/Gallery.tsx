@@ -12,6 +12,7 @@ import { Pagination, Navigation } from "swiper";
 
 // Import Swiper styles
 import "swiper/swiper-bundle.min.css";
+import { Spinner } from "../../others/Spinner";
 
 /**
  * This component will be included in About
@@ -19,34 +20,36 @@ import "swiper/swiper-bundle.min.css";
  */
 function Gallery() {
 	return (
-		<div className={styles.galleryMainContainer}>
-			<h3>Galería</h3>
-			<Swiper
-				slidesPerView={1}
-				spaceBetween={30}
-				loop={true}
-				autoplay
-				pagination={{
-					clickable: true,
-				}}
-				navigation={true}
-				modules={[Pagination, Navigation]}
-				className={styles.mySwiper}
-			>
-				<SwiperSlide>
-					<img src={img1} width="500" height="300" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={img2} width="500" height="300" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={img3} width="500" height="300" />
-				</SwiperSlide>
-				<SwiperSlide>
-					<img src={img4} width="500" height="300" />
-				</SwiperSlide>
-			</Swiper>
-		</div>
+		<React.Suspense fallback={<Spinner />}>
+			<div className={styles.galleryMainContainer}>
+				<h3>Galería</h3>
+				<Swiper
+					slidesPerView={1}
+					spaceBetween={30}
+					loop={true}
+					autoplay
+					pagination={{
+						clickable: true,
+					}}
+					navigation={true}
+					modules={[Pagination, Navigation]}
+					className={styles.mySwiper}
+				>
+					<SwiperSlide>
+						<img src={img1} width="500" height="300" />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src={img2} width="500" height="300" />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src={img3} width="500" height="300" />
+					</SwiperSlide>
+					<SwiperSlide>
+						<img src={img4} width="500" height="300" />
+					</SwiperSlide>
+				</Swiper>
+			</div>
+		</React.Suspense>
 	);
 }
 

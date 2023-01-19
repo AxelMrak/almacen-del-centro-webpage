@@ -1,0 +1,30 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+.footerMain {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $third-color;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  transition: all 1s;
+}
+
+.socialMedia img:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+.address p {
+  font-family: $text-font;
+  font-size: $text-size;
+}

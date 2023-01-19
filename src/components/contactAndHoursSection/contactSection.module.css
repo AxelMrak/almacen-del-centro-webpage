@@ -1,0 +1,10 @@
+.contactSectionContainer {
+  padding: 1rem;
+  row-gap: 1rem;
+  background-color: #1b1b1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}/*# sourceMappingURL=contactSection.module.css.map */

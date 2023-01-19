@@ -5,8 +5,7 @@
   justify-content: center;
   row-gap: 2rem;
   padding-top: 2rem;
-  background: rgb(234, 182, 136);
-  background: linear-gradient(180deg, rgb(234, 182, 136) 55%, hsl(0deg, 0%, 100%) 100%);
+  background-color: #D1A47D;
 }
 
 .aboutMainContainer h2 {

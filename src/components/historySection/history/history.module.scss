@@ -36,6 +36,12 @@
   font-size: $text-size;
 }
 
+@include xsmall() {
+  .ourHistoryContainer img {
+    width: 50vw;
+  }
+}
+
 @include medium() {
   .ourHistoryContainer {
     flex-direction: column;
@@ -47,5 +53,11 @@
 
   .ourHistoryContainerTexts {
     width: 90%;
+  }
+}
+
+@include large() {
+  .ourHistoryContainer img {
+    width: 400px;
   }
 }

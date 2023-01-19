@@ -63,3 +63,9 @@
     width: 80%;
   }
 }
+
+@include large() {
+  .productMainContainer {
+    width: 300px;
+  }
+}

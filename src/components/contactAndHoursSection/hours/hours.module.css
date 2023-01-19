@@ -1,0 +1,43 @@
+.hoursMainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hoursMainContainer h2 {
+  font-family: "Copperplate", "Montserrat";
+  font-size: 2rem;
+  color: #FFFFFF;
+}
+
+.hoursCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  background-color: #FFFFFF;
+  border: 1px solid white;
+  border-radius: 25px;
+  padding: 2rem;
+}
+
+.hoursUnit h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+}
+
+.hoursUnit p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .hoursCard {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 95%;
+  }
+}/*# sourceMappingURL=hours.module.css.map */
