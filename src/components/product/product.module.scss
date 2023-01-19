@@ -2,8 +2,9 @@
 @import '../../styles/variables';
 
 .productMainContainer {
-  width: 25%;
-  height: max-content;
+  width: 30%;
+  max-width: 450px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +28,8 @@
   border-radius: 20px;
   position: relative;
   top: 0%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .productMainContainer h3 {
@@ -61,11 +64,5 @@
 @include medium() {
   .productMainContainer {
     width: 80%;
-  }
-}
-
-@include large() {
-  .productMainContainer {
-    width: 300px;
   }
 }

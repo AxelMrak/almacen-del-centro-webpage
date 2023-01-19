@@ -6,9 +6,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  row-gap: 2rem;
-  padding-top: 2rem;
-  background-color: $secondary-color;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  // background-color: $secondary-color;
 }
 
 .aboutMainContainer h2 {
@@ -16,8 +16,12 @@
   font-family: $title-font;
   font-size: $title-size;
   margin: 3rem;
-  background-color: #af7439;
-  padding: 20px;
+  padding: 1rem;
   border-radius: 20px;
   box-shadow: 2px 2px 10px #8B5E3C;
+  background-color: $secondary-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 3s;
 }

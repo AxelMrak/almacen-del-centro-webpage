@@ -14,9 +14,7 @@ function HistorySection() {
 		<section className={styles.aboutMainContainer}>
 			<h2>Sobre nosotros</h2>
 			<History />
-			<GuardaPampa />
 			<OurMessage />
-			<GuardaPampa />
 			<Gallery />
 		</section>
 	);

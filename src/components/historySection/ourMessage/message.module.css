@@ -4,12 +4,20 @@
   align-items: center;
   justify-content: center;
   row-gap: 2rem;
+  padding: 4rem;
+  margin: 1rem;
 }
 
 .messageMainContainer h3 {
   font-family: "Copperplate", "Montserrat";
   font-size: 2rem;
   color: #1b1b1c;
+}
+
+.messageMainContainer h3::before, .messageMainContainer h3::after {
+  margin: 1rem;
+  content: "|";
+  color: #A20000;
 }
 
 .messageMainContainer img {

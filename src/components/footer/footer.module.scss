@@ -1,11 +1,14 @@
 @import '../../styles/mixins';
 @import '../../styles/variables';
+
 .footerMain {
   width: 100%;
   padding: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
   justify-content: space-between;
   background-color: $third-color;
 }
@@ -27,4 +30,10 @@
 .address p {
   font-family: $text-font;
   font-size: $text-size;
+}
+
+@include medium() {
+  .footerMain {
+    justify-content: center;
+  }
 }

@@ -11,10 +11,14 @@
 }
 
 .ourHistoryContainer img {
-  width: 500px;
-  height: auto;
-  border-radius: 25px;
+  width: 40%;
+  object-fit: cover;
+  border-radius: 20px;
   transition: transform 0.5s;
+  border: 3px solid $secondary-color;
+  box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
 }
 
 .ourHistoryContainer img:hover {
@@ -30,16 +34,16 @@
   font-size: $title-size;
 }
 
+.ourHistoryContainer h3::before {
+  margin: 1rem;
+  content: "|";
+  color: $primary-color;
+}
+
 .ourHistoryContainerTexts p {
   line-height: 30px;
   font-family: $text-font;
   font-size: $text-size;
-}
-
-@include xsmall() {
-  .ourHistoryContainer img {
-    width: 50vw;
-  }
 }
 
 @include medium() {
@@ -48,16 +52,10 @@
   }
 
   .ourHistoryContainer img {
-    width: 300px;
+    width: 80%;
   }
 
   .ourHistoryContainerTexts {
     width: 90%;
-  }
-}
-
-@include large() {
-  .ourHistoryContainer img {
-    width: 400px;
   }
 }

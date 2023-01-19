@@ -2,6 +2,7 @@
 @import '../../../styles/variables';
 
 .hoursMainContainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,9 +10,17 @@
 }
 
 .hoursMainContainer h2 {
-  font-family: $title-font;
-  font-size: $title-size;
-  color: $third-color;
+    color: white;
+      font-family: $title-font;
+      font-size: $title-size;
+      padding: 1rem;
+      border-radius: 20px;
+      box-shadow: 2px 2px 10px #8B5E3C;
+      background-color: $secondary-color;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: background 3s;
 }
 
 .hoursCard {
@@ -19,11 +28,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50vw;
+  width: 25%;
   background-color: $third-color;
-  border: 1px solid white;
   border-radius: 25px;
-  padding: 2rem;
+  padding: 1rem;
+  color: black;
+  box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
 }
 
 .hoursUnit h3 {
@@ -38,7 +50,13 @@
 
 @include medium() {
   .hoursCard {
-    width: max-content;
-    max-width: 95%;
+    width: 50%;
+  }
+}
+
+@include small() {
+  .hoursCard {
+    width: 80%;
+
   }
 }

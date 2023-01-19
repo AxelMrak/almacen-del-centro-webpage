@@ -2,26 +2,33 @@
 @import '../../../styles/variables';
 
 .mySwiper {
-  width: 70%;
-  height: 100%;
+  width: 80%;
+  height: auto;
   border-radius: 20px;
 }
 
 .mySwiper img {
   width: 100%;
-  height: 500px;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .galleryMainContainer {
   width: 100%;
   text-align: center;
-  margin-bottom: 1rem;
-  margin-top: -3rem;
 }
 
 .galleryMainContainer h3 {
   font-family: $title-font;
   font-size: $title-size;
+}
+
+.galleryMainContainer h3::after, .galleryMainContainer h3::before {
+  margin: 1rem;
+    content: "|";
+    color: $primary-color;
 }
 
 @include medium() {

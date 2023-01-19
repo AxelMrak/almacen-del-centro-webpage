@@ -7,12 +7,20 @@
   align-items: center;
   justify-content: center;
   row-gap: 2rem;
+  padding: 4rem;
+  margin: 1rem;
 }
 
 .messageMainContainer h3 {
   font-family: $title-font;
   font-size: $title-size;
   color: $fourth-color;
+}
+
+.messageMainContainer h3::before, .messageMainContainer h3::after {
+  margin: 1rem;
+    content: "|";
+    color: $primary-color;
 }
 
 .messageMainContainer img {

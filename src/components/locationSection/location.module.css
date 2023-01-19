@@ -5,11 +5,22 @@
   justify-content: center;
   text-align: center;
   padding: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .locationSectionContainer h2 {
+  color: white;
   font-family: "Copperplate", "Montserrat";
   font-size: 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px #8B5E3C;
+  background-color: #D1A47D;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 3s;
 }
 
 .locationSectionContainer p {
