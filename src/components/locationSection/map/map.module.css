@@ -2,11 +2,16 @@
   width: 60%;
   height: 50vh;
   margin: 1rem;
-  border: 2px solid #A20000;
-  border-radius: 20px;
+  border-radius: 0px 0px 30px 30px;
+  border-color: transparent;
   box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  transition: border-radius 1s;
+}
+
+.map:hover {
+  border-radius: 15px 0px 0px 15px;
 }
 
 @media (max-width: 991.98px) {

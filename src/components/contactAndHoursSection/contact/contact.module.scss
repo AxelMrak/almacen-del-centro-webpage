@@ -11,17 +11,9 @@
 }
 
 .contactMainContainer h2 {
-    color: white;
       font-family: $title-font;
       font-size: $title-size;
-      padding: 1rem;
-      border-radius: 20px;
-      box-shadow: 2px 2px 10px #8B5E3C;
-      background-color: $secondary-color;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transition: background 3s;
+      @include section-title;
 }
 
 .contactMethods {
@@ -30,24 +22,30 @@
   align-items: center;
   justify-content: center;
   row-gap: 2rem;
+  padding: 2rem;
   width: max-content;
+  height: 400px;
   background-color: $third-color;
-
-    border-radius: 25px;
+  @include border-radius-div;
     padding: 1rem;
     color: black;
     box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+    transition: border-radius 1s;
+}
+
+.contactMethods:hover {
+  @include border-radius-div-effect;
 }
 
 .contactItem {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  column-gap: 1rem;
+  row-gap: 1rem;
 }
 
 .contactItem a {

@@ -14,18 +14,10 @@
 }
 
 .productsSectionContainer h2 {
-  margin-top: -4rem;
-    color: white;
+  margin-top: -2rem;
       font-family: $title-font;
       font-size: $title-size;
-      padding: 1rem;
-      border-radius: 20px;
-      box-shadow: 2px 2px 10px #8B5E3C;
-      background-color: $secondary-color;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transition: background 3s;
+      @include section-title()
 }
 
 .productsContainer {

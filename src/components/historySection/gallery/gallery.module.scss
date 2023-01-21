@@ -4,7 +4,12 @@
 .mySwiper {
   width: 80%;
   height: auto;
-  border-radius: 20px;
+  transition: border-radius 1s;
+  @include border-radius-img;
+}
+
+.mySwiper:hover {
+  @include border-radius-img-effect;
 }
 
 .mySwiper img {
@@ -18,18 +23,18 @@
 .galleryMainContainer {
   width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .galleryMainContainer h3 {
+  text-align: center;
   font-family: $title-font;
   font-size: $title-size;
+  @include sub-section-title;
 }
 
-.galleryMainContainer h3::after, .galleryMainContainer h3::before {
-  margin: 1rem;
-    content: "|";
-    color: $primary-color;
-}
 
 @include medium() {
   .mySwiper {

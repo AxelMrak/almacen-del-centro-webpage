@@ -10,19 +10,20 @@
   color: #FFFFFF;
   background-color: #A20000;
   border: 1px solid white;
-  border-radius: 20px;
+  border-top: 10px solid #1b1b1c;
+  border-radius: 0px 0px 20px 20px;
   transition: all 1s;
+  margin: 1rem;
 }
 
 .productMainContainer:hover {
   transform: scale(1.1);
   box-shadow: 2px 1.5px 2px 1.5px gray;
-  margin: 1rem;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .productMainContainer img {
   width: 100%;
-  border-radius: 20px;
   position: relative;
   top: 0%;
   -o-object-fit: cover;

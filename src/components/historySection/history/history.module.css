@@ -10,7 +10,7 @@
   width: 40%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 20px;
+  border-radius: 0px 0px 30px 30px;
   transition: transform 0.5s;
   border: 3px solid #D1A47D;
   box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
@@ -20,6 +20,7 @@
 
 .ourHistoryContainer img:hover {
   transform: scale(1.1);
+  border-radius: 15px 0px 0px 15px;
 }
 
 .ourHistoryContainerTexts {
@@ -29,12 +30,14 @@
 .ourHistoryContainerTexts h3 {
   font-family: "Copperplate", "Montserrat";
   font-size: 2rem;
-}
-
-.ourHistoryContainer h3::before {
-  margin: 1rem;
-  content: "|";
-  color: #A20000;
+  color: white;
+  background-color: #1b1b1c;
+  border-left: 10px solid #A20000;
+  padding: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .ourHistoryContainerTexts p {

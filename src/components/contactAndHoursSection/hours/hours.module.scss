@@ -10,17 +10,9 @@
 }
 
 .hoursMainContainer h2 {
-    color: white;
-      font-family: $title-font;
-      font-size: $title-size;
-      padding: 1rem;
-      border-radius: 20px;
-      box-shadow: 2px 2px 10px #8B5E3C;
-      background-color: $secondary-color;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transition: background 3s;
+  font-family: $title-font;
+  font-size: $title-size;
+  @include section-title;
 }
 
 .hoursCard {
@@ -28,14 +20,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 25%;
+  width: max-content;
+  height: 400px;
   background-color: $third-color;
-  border-radius: 25px;
   padding: 1rem;
   color: black;
   box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  @include border-radius-div;
+}
+
+.hoursCard:hover {
+  @include border-radius-div-effect;
 }
 
 .hoursUnit h3 {

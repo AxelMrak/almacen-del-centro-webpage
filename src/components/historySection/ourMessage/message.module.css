@@ -11,13 +11,14 @@
 .messageMainContainer h3 {
   font-family: "Copperplate", "Montserrat";
   font-size: 2rem;
-  color: #1b1b1c;
-}
-
-.messageMainContainer h3::before, .messageMainContainer h3::after {
-  margin: 1rem;
-  content: "|";
-  color: #A20000;
+  color: white;
+  background-color: #1b1b1c;
+  border-left: 10px solid #A20000;
+  padding: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 0px 5px 5px 0px;
 }
 
 .messageMainContainer img {
@@ -38,4 +39,10 @@
 
 .quote {
   font-style: italic;
+}
+
+@media (max-width: 991.98px) {
+  .quote, .nameQuote {
+    width: 90%;
+  }
 }/*# sourceMappingURL=message.module.css.map */

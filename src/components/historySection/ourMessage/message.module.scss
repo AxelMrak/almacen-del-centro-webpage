@@ -14,13 +14,7 @@
 .messageMainContainer h3 {
   font-family: $title-font;
   font-size: $title-size;
-  color: $fourth-color;
-}
-
-.messageMainContainer h3::before, .messageMainContainer h3::after {
-  margin: 1rem;
-    content: "|";
-    color: $primary-color;
+  @include sub-section-title;
 }
 
 .messageMainContainer img {
@@ -41,4 +35,10 @@
 
 .quote {
   font-style: italic;
+}
+
+@include medium() {
+  .quote, .nameQuote {
+    width: 90%;
+  }
 }

@@ -5,11 +5,16 @@
   width: 60%;
   height: 50vh;
   margin: 1rem;
-  border: 2px solid $primary-color;
-  border-radius: 20px;
+  @include border-radius-img;
+  border-color: transparent;
   box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  transition: border-radius 1s;
+}
+
+.map:hover {
+  @include border-radius-img-effect;
 }
 
 @include medium() {

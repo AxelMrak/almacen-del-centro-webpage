@@ -22,8 +22,8 @@ const Homepage = () => (
 		{/* Map section */}
 		<GuardaPampa/>
 		<Location />
-		{/* Contact section */}
 		<GuardaPampa />
+		{/* Contact section */}
 		<ContactSection />
 	</>
 );

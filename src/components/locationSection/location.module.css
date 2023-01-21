@@ -10,17 +10,15 @@
 }
 
 .locationSectionContainer h2 {
-  color: white;
   font-family: "Copperplate", "Montserrat";
   font-size: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 15px 15px 30px 30px;
   padding: 1rem;
-  border-radius: 20px;
-  box-shadow: 2px 2px 10px #8B5E3C;
-  background-color: #D1A47D;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: background 3s;
+  color: white;
+  background-color: #1b1b1c;
+  border-left: 10px solid #D1A47D;
+  border-right: 10px solid #D1A47D;
 }
 
 .locationSectionContainer p {

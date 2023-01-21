@@ -1,7 +1,12 @@
 .mySwiper {
   width: 80%;
   height: auto;
-  border-radius: 20px;
+  transition: border-radius 1s;
+  border-radius: 0px 0px 30px 30px;
+}
+
+.mySwiper:hover {
+  border-radius: 15px 0px 0px 15px;
 }
 
 .mySwiper img {
@@ -17,17 +22,23 @@
 .galleryMainContainer {
   width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .galleryMainContainer h3 {
+  text-align: center;
   font-family: "Copperplate", "Montserrat";
   font-size: 2rem;
-}
-
-.galleryMainContainer h3::after, .galleryMainContainer h3::before {
-  margin: 1rem;
-  content: "|";
-  color: #A20000;
+  color: white;
+  background-color: #1b1b1c;
+  border-left: 10px solid #A20000;
+  padding: 1rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 0px 5px 5px 0px;
 }
 
 @media (max-width: 991.98px) {

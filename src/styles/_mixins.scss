@@ -1,3 +1,5 @@
+@import './variables';
+
 // Responsive predefined
 @mixin xsmall() {
   @media (max-width: 575.98px) {
@@ -28,4 +30,43 @@
   @media (min-width: 1199.99px) {
     @content;
   }
+}
+
+//Global styles
+
+@mixin section-title() {
+  margin-bottom: 2rem;
+  border-radius: 15px 15px 30px 30px;
+  padding: 1rem;
+  color: white;
+  background-color: $fourth-color;
+  border-left: 10px solid $secondary-color;
+  border-right: 10px solid $secondary-color;
+}
+
+@mixin sub-section-title() {
+  color: white;
+  background-color: $fourth-color;
+  border-left: 10px solid $primary-color;
+  padding: 1rem;
+  width: max-content;
+  border-radius: 0px 5px 5px 0px;
+}
+
+@mixin border-radius-img () {
+  border-radius: 0px 0px 30px 30px;
+}
+
+@mixin border-radius-img-effect () {
+  border-radius: 15px 0px 0px 15px;
+}
+
+@mixin border-radius-div() {
+  border-top: 10px solid $fourth-color;
+    border-radius: 0px 0px 20px 20px;
+    
+}
+
+@mixin border-radius-div-effect() {
+    border-radius: 0px 0px 10px 10px;
 }
