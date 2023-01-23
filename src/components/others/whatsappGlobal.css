@@ -1,0 +1,11 @@
+.whatsapp-global-main {
+  width: max-content;
+  position: sticky;
+  bottom: 0%;
+  left: 95%;
+}
+
+.whatsapp-global-main:hover {
+  transform: scale(1.1);
+  
+}

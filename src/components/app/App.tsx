@@ -6,6 +6,7 @@ import Homepage from "../../pages/home/Homepage";
 import ProductsPage from "../../pages/products/ProductsPage";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
+import WhatsappGlobal from "../others/WhatsappGlobal";
 import "./App.css";
 
 /**
@@ -31,6 +32,7 @@ function App() {
 				{/* 404 */}
 				<Route path="*" element={<NotFoundPage />} />
 			</Routes>
+			<WhatsappGlobal />
 			<Footer />
 		</Router>
 	);

@@ -1,8 +1,14 @@
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
+import { VitePluginSitemap } from "@tormak/vite-plugin-sitemap";
 import react from "@vitejs/plugin-react";
 
-// TODO: Add sitemap generator
+const routes = [
+	{ path: "/", name: "Inicio" },
+	{ path: "/historia", name: "Historia" },
+	{ path: "/productos", name: "Productos" },
+	{ path: "/contacto", name: "Contacto" },
+];
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -30,6 +36,21 @@ export default defineConfig({
 				display: "fullscreen",
 				description:
 					"Almacén del centro es un lugar donde podrás conocer un poco de la historia y tradiciones de San Luis.",
+			},
+		}),
+		// TODO: Change baseURL when we'll have the domain
+		VitePluginSitemap({
+			baseUrl: "https://almacendelcentro.com",
+			contentBase: "public",
+			routes: routes,
+			urlGenHook: (config) => {
+				const updatedRoutes = config.routes;
+
+				/** put any logic here that you want to run before the sitemap.xml file is generated
+				 * ex: generate URLs for all of your blog posts
+				 */
+
+				return updatedRoutes;
 			},
 		}),
 	],

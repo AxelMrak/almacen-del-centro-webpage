@@ -45,6 +45,7 @@
 }
 
 @mixin sub-section-title() {
+  max-width: 90%;
   color: white;
   background-color: $fourth-color;
   border-left: 10px solid $primary-color;
