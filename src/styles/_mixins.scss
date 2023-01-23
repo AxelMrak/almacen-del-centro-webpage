@@ -1,6 +1,12 @@
 @import './variables';
 
 // Responsive predefined
+@mixin xxsmall() {
+  @media (max-width: 352px) {
+    @content;
+  }
+}
+
 @mixin xsmall() {
   @media (max-width: 575.98px) {
     @content;

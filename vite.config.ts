@@ -32,6 +32,11 @@ export default defineConfig({
 						type: "image/png",
 						sizes: "150x150",
 					},
+					{
+						src: "/logo-app.png",
+						type: "image/png",
+						sizes: "512x512"
+					}
 				],
 				display: "fullscreen",
 				description:

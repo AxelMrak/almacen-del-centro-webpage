@@ -1,4 +1,4 @@
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/logo.webp";
 import facebook from "../../assets/svg/facebook96.svg";
 import whatsapp from "../../assets/svg/whatsapp96.svg";
 import phone from "../../assets/svg/phone.svg";

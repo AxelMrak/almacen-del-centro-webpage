@@ -304,3 +304,10 @@ Add the correct display in Chrome and Safari.
 summary {
 	display: list-item;
 }
+
+@media (max-width: 352px) {
+    #root {
+      width: 100vw;
+			overflow-x: hidden;
+    }
+}
