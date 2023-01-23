@@ -1,5 +1,5 @@
 import styles from "../header/header.module.css";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/logo.webp";
 import navIco from "../../assets/svg/menu-ico.svg";
 import Navbar from "../navbar/Navbar";
 import { useEffect, useMemo, useState } from "react";
