@@ -37,7 +37,7 @@ function History() {
 			<img
 				src={antiquePhoto}
 				width="500"
-				height="auto"
+				height="400"
 				alt="Frente del almacen antes de nuestra adquisición del mismo, en ese momento llevaba el nombre de Viejo Almacen."
 			/>
 		</div>

@@ -23,7 +23,12 @@ function Footer() {
 					rel="noopener noreferrer"
 					title="Estamos en Facebook"
 				>
-					<img src={facebook} width="70" height="70" />
+					<img
+						src={facebook}
+						width="70"
+						height="70"
+						alt="Encuentrenos en Facebook"
+					/>
 				</a>
 				<a
 					href={
@@ -33,7 +38,12 @@ function Footer() {
 					rel="noreferrer"
 					title="Comunicate con nosotros"
 				>
-					<img src={whatsapp} width="70" height="70" />
+					<img
+						src={whatsapp}
+						width="70"
+						height="70"
+						alt="Comuniquese en WhatsApp"
+					/>
 				</a>
 				<a
 					href="tel:+5402657421228"
@@ -41,7 +51,12 @@ function Footer() {
 					rel="noreferrer"
 					title="Llamanos"
 				>
-					<img src={phone} width="50" height="50" />
+					<img
+						src={phone}
+						width="50"
+						height="50"
+						alt="Comuniquese a nuestro telefono"
+					/>
 				</a>
 			</div>
 		</footer>

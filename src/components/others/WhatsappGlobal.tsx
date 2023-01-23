@@ -11,7 +11,7 @@ const WhatsappGlobal = () => (
 			rel="noreferrer"
 			title="Comunicate con nosotros"
 		>
-			<img src={whatsapp} width="80" height="auto" />
+			<img src={whatsapp} width="80" height="80" alt="Comunicate por WhatsApp"/>
 		</a>
 	</div>
 );
