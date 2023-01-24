@@ -1,1 +1,3 @@
+// TODO: Change URL when we'll buy the domain
+Sitemap: http://almacendelcentro.com/sitemap.xml
 User-agent: *
