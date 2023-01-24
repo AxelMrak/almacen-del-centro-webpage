@@ -11,9 +11,9 @@
 }
 
 .contactMainContainer h2 {
-      font-family: $title-font;
-      font-size: $title-size;
-      @include section-title;
+  font-family: $title-font;
+  font-size: $title-size;
+  @include section-title;
 }
 
 .contactMethods {
@@ -27,12 +27,12 @@
   height: 400px;
   background-color: $third-color;
   @include border-radius-div;
-    padding: 1rem;
-    color: black;
-    box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
-    transition: border-radius 1s;
+  padding: 1rem;
+  color: black;
+  box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
+  transition: border-radius 1s;
 }
 
 .contactMethods:hover {

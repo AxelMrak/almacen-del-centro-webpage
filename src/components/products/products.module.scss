@@ -15,9 +15,9 @@
 
 .productsSectionContainer h2 {
   margin-top: -2rem;
-      font-family: $title-font;
-      font-size: $title-size;
-      @include section-title()
+  font-family: $title-font;
+  font-size: $title-size;
+  @include section-title()
 }
 
 .productsContainer {
@@ -27,7 +27,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   row-gap: 1rem;
 }
 

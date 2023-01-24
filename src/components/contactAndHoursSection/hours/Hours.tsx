@@ -6,7 +6,6 @@ import styles from "../hours/hours.module.css";
  * ? Show business hours
  * @returns Hours component
  */
-// TODO: Review component's width
 function Hours() {
 	return (
 		<div className={styles.hoursMainContainer}>

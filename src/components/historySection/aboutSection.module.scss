@@ -11,6 +11,26 @@
   background-color: $third-color;
 }
 
+.animation {
+  transition: opacity 1s;
+  animation: appear 1s 1 alternate;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
 .aboutMainContainer h2 {
   color: white;
   font-family: $title-font;

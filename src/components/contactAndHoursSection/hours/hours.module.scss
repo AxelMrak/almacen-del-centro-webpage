@@ -9,6 +9,7 @@
   justify-content: center;
 }
 
+
 .hoursMainContainer h2 {
   font-family: $title-font;
   font-size: $title-size;
@@ -20,7 +21,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: max-content;
+  width: 60%;
   height: 400px;
   background-color: $third-color;
   padding: 1rem;
@@ -48,13 +49,12 @@
 
 @include medium() {
   .hoursCard {
-    width: 50%;
+    width: 60%;
   }
 }
 
 @include small() {
   .hoursCard {
-    width: 80%;
-
+    width: 80%; 
   }
 }
