@@ -29,6 +29,7 @@
   -webkit-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 8px 21px 0px rgba(0, 0, 0, 0.75);
   @include border-radius-div;
+  transition: all 1s;
 }
 
 .hoursCard:hover {
