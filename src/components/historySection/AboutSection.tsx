@@ -17,7 +17,7 @@ function HistorySection() {
 	return (
 		<section className={styles.aboutMainContainer}>
 			<h2>Sobre nosotros</h2>
-			<Suspense fallback={<Skeleton/>}>
+			<Suspense>
 				<History />
 				<OurMessage />
 				<Gallery />

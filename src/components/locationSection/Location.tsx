@@ -1,5 +1,7 @@
-import Map from "./map/Map";
-import styles  from '../locationSection/location.module.css';
+import styles from "../locationSection/location.module.css";
+import { lazy, Suspense } from "react";
+
+const Map = lazy(() => import("./map/Map"));
 
 /**
  * * Section component
@@ -11,7 +13,9 @@ function Location() {
 		<section className={styles.locationSectionContainer}>
 			<h2>Encuéntrenos</h2>
 			<p>Lavalle 100, Villa Mercedes, San Luis</p>
-			<Map />
+			<Suspense>
+				<Map />
+			</Suspense>
 		</section>
 	);
 }
