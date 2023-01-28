@@ -1,7 +1,11 @@
+import { lazy, Suspense } from "react";
+import Skeleton from "react-loading-skeleton";
 import styles from "../historySection/aboutSection.module.css";
-import Gallery from "./gallery/Gallery";
-import History from "./history/History";
-import OurMessage from "./ourMessage/OurMessage";
+
+
+const History = lazy(() => import("./history/History"));
+const Gallery = lazy(() => import("./gallery/Gallery"));
+const OurMessage = lazy(() => import("./ourMessage/OurMessage"));
 
 /**
  * * Section component History or about
@@ -10,13 +14,14 @@ import OurMessage from "./ourMessage/OurMessage";
  */
 // TODO: In this component, I added a new animation. But I should improve the animation and the logic behind or remove it.
 function HistorySection() {
-
 	return (
 		<section className={styles.aboutMainContainer}>
 			<h2>Sobre nosotros</h2>
-			<History />
-			<OurMessage />
-			<Gallery />
+			<Suspense fallback={<Skeleton/>}>
+				<History />
+				<OurMessage />
+				<Gallery />
+			</Suspense>
 		</section>
 	);
 }
