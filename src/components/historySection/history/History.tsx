@@ -39,6 +39,7 @@ function History() {
 				width="500"
 				height="400"
 				alt="Frente del almacen antes de nuestra adquisición del mismo, en ese momento llevaba el nombre de Viejo Almacen."
+				loading="lazy"
 			/>
 		</div>
 	);

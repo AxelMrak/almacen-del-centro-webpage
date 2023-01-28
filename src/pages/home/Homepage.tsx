@@ -1,10 +1,18 @@
-import ContactSection from "../../components/contactAndHoursSection/ContactSection";
-import HistorySection from "../../components/historySection/AboutSection";
-import Location from "../../components/locationSection/Location";
+import { lazy, Suspense } from "react";
+import Skeleton from "react-loading-skeleton";
 import MainSection from "../../components/main/MainSection";
 import { GuardaPampa } from "../../components/others/GuardaPampa";
-import Products from "../../components/products/Products";
 
+const HistorySection = lazy(
+	() => import("../../components/historySection/AboutSection")
+);
+const Products = lazy(() => import("../../components/products/Products"));
+const Location = lazy(
+	() => import("../../components/locationSection/Location")
+);
+const ContactSection = lazy(
+	() => import("../../components/contactAndHoursSection/ContactSection")
+);
 /**
  * * Page component
  * ? Is the principal page of the website
@@ -12,19 +20,21 @@ import Products from "../../components/products/Products";
  */
 const Homepage = () => (
 	<>
-		{/* Main section */}
-		<MainSection />
-		{/* About section */}
-		<HistorySection />
-		<GuardaPampa />
-		{/* Products section */}
-		<Products isMainPage={true} />
-		{/* Map section */}
-		<GuardaPampa/>
-		<Location />
-		<GuardaPampa />
-		{/* Contact section */}
-		<ContactSection />
+		<Suspense fallback={<Skeleton count={6}/>}>
+			{/* Main section */}
+			<MainSection />
+			{/* About section */}
+			<HistorySection />
+			<GuardaPampa />
+			{/* Products section */}
+			<Products isMainPage={true} />
+			{/* Map section */}
+			<GuardaPampa />
+			<Location />
+			<GuardaPampa />
+			{/* Contact section */}
+			<ContactSection />
+		</Suspense>
 	</>
 );
 
