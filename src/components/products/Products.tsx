@@ -4,7 +4,6 @@ import cuchilleria from "../../assets/img/cuchilleria-img.webp";
 import almacen from "../../assets/img/almacen-img.webp";
 import vinos from "../../assets/img/vinos-img.webp";
 import chacinados from "../../assets/img/chacinados-img.webp";
-import Skeleton from "react-loading-skeleton";
 
 /**
  * * Two interfaces who do the same thing
@@ -62,7 +61,7 @@ function Products({ isMainPage }: Props) {
 		<section className={styles.productsSectionContainer}>
 			<h2>Nuestros productos</h2>
 			<div className={styles.productsContainer}>
-				<Suspense fallback={<Skeleton />}>
+				<Suspense>
 					{/* If it's rendering in HomePage only shows three products, else if it is rendering in the product page shows all products */}
 					{isMainPage
 						? products.map((product: Product, index: number) =>

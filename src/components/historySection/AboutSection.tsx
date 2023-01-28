@@ -1,5 +1,4 @@
 import { lazy, Suspense } from "react";
-import Skeleton from "react-loading-skeleton";
 import styles from "../historySection/aboutSection.module.css";
 
 
