@@ -1,15 +1,14 @@
 import { lazy, Suspense } from "react";
 import Skeleton from "react-loading-skeleton";
+import Location from "../../components/locationSection/Location";
 import MainSection from "../../components/main/MainSection";
 import { GuardaPampa } from "../../components/others/GuardaPampa";
+import Products from "../../components/products/Products";
 
 const HistorySection = lazy(
 	() => import("../../components/historySection/AboutSection")
 );
-const Products = lazy(() => import("../../components/products/Products"));
-const Location = lazy(
-	() => import("../../components/locationSection/Location")
-);
+
 const ContactSection = lazy(
 	() => import("../../components/contactAndHoursSection/ContactSection")
 );
