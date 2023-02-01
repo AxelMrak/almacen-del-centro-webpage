@@ -4,6 +4,7 @@ import cuchilleria from "../../assets/img/cuchilleria-img.webp";
 import almacen from "../../assets/img/almacen-img.webp";
 import vinos from "../../assets/img/vinos-img.webp";
 import chacinados from "../../assets/img/chacinados-img.webp";
+import LazyLoad from "react-lazy-load";
 
 /**
  * * Two interfaces who do the same thing
@@ -58,31 +59,33 @@ const Product = lazy(() => import("../product/Product"));
  */
 function Products({ isMainPage }: Props) {
 	return (
-		<section className={styles.productsSectionContainer}>
-			<h2>Nuestros productos</h2>
-			<div className={styles.productsContainer}>
-				<Suspense>
-					{/* If it's rendering in HomePage only shows three products, else if it is rendering in the product page shows all products */}
-					{isMainPage
-						? products.map((product: Product, index: number) =>
-							index < 3 ? (
+		<LazyLoad>
+			<section className={styles.productsSectionContainer}>
+				<h2>Nuestros productos</h2>
+				<div className={styles.productsContainer}>
+					<Suspense>
+						{/* If it's rendering in HomePage only shows three products, else if it is rendering in the product page shows all products */}
+						{isMainPage
+							? products.map((product: Product, index: number) =>
+								index < 3 ? (
+									<Product
+										name={product.title}
+										img={product.img}
+										description={product.description}
+										key={index}
+									/>
+								) : null  )
+							: products.map((product: Product, index: number) => (
 								<Product
 									name={product.title}
 									img={product.img}
 									description={product.description}
 									key={index}
-								/>
-							) : null )
-						: products.map((product: Product, index: number) => (
-							<Product
-								name={product.title}
-								img={product.img}
-								description={product.description}
-								key={index}
-							/>  ))}
-				</Suspense>
-			</div>
-		</section>
+								/> ))}
+					</Suspense>
+				</div>
+			</section>
+		</LazyLoad>
 	);
 }
 
