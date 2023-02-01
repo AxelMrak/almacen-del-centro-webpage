@@ -15,7 +15,7 @@ function Contact() {
 			<h2>Contáctenos</h2>
 			<div className={styles.contactMethods}>
 				<div className={styles.contactItem}>
-					<img src={email} width="40" height="40" alt="Comuniquese por Email" />
+					<img src={email} width="40" height="40" alt="Comuniquese por Email" loading="lazy" />
 					<a
 						href="mailto:elcorreoquequieres@correo.com"
 						target="_blank"
@@ -29,7 +29,7 @@ function Contact() {
 						src={phone}
 						width="30"
 						height="30"
-						alt="Comuniquese por telefono"
+						alt="Comuniquese por telefono" loading="lazy"
 					/>
 					<a href="tel:+5402657421228" target="_blank" rel="noreferrer">
 						0265742-1228
@@ -40,7 +40,7 @@ function Contact() {
 						src={whatsapp}
 						width="40"
 						height="40"
-						alt="Comuniquese por WhatsApp"
+						alt="Comuniquese por WhatsApp" loading="lazy"
 					/>
 					<a
 						href={

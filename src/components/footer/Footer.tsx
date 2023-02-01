@@ -12,7 +12,7 @@ import styles from "../footer/footer.module.css";
 function Footer() {
 	return (
 		<footer className={styles.footerMain}>
-			<img src={logo} width="100" height="100" alt="Logo Almacen del Centro" />
+			<img src={logo} width="100" height="100" alt="Logo Almacen del Centro" loading="lazy"/>
 			<div className={styles.address}>
 				<p>Lavalle 100, Villa Mercedes, San Luis</p>
 			</div>
@@ -27,7 +27,7 @@ function Footer() {
 						src={facebook}
 						width="70"
 						height="70"
-						alt="Encuentrenos en Facebook"
+						alt="Encuentrenos en Facebook" loading="lazy"
 					/>
 				</a>
 				<a
@@ -42,7 +42,7 @@ function Footer() {
 						src={whatsapp}
 						width="70"
 						height="70"
-						alt="Comuniquese en WhatsApp"
+						alt="Comuniquese en WhatsApp" loading="lazy"
 					/>
 				</a>
 				<a
@@ -55,7 +55,7 @@ function Footer() {
 						src={phone}
 						width="50"
 						height="50"
-						alt="Comuniquese a nuestro telefono"
+						alt="Comuniquese a nuestro telefono" loading="lazy"
 					/>
 				</a>
 			</div>

@@ -38,16 +38,16 @@ function Gallery() {
 					className={styles.mySwiper}
 				>
 					<SwiperSlide>
-						<img src={img1} width="500" height="300" alt="Imagen temporal del interior del local"/>
+						<img src={img1} width="500" height="300" alt="Imagen temporal del interior del local" loading="lazy" />
 					</SwiperSlide>
 					<SwiperSlide>
-						<img src={img2} width="500" height="300" alt="Imagen temporal del interior del local"/>
+						<img src={img2} width="500" height="300" alt="Imagen temporal del interior del local" loading="lazy" />
 					</SwiperSlide>
 					<SwiperSlide>
-						<img src={img3} width="500" height="300" alt="Imagen temporal del interior del local"/>
+						<img src={img3} width="500" height="300" alt="Imagen temporal del interior del local" loading="lazy" />
 					</SwiperSlide>
 					<SwiperSlide>
-						<img src={img4} width="500" height="300" alt="Imagen temporal del interior del local"/>
+						<img src={img4} width="500" height="300" alt="Imagen temporal del interior del local" loading="lazy" />
 					</SwiperSlide>
 				</Swiper>
 			</div>
