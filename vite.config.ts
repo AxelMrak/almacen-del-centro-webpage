@@ -35,17 +35,16 @@ export default defineConfig({
 					{
 						src: "/logo-app.png",
 						type: "image/png",
-						sizes: "512x512"
-					}
+						sizes: "512x512",
+					},
 				],
 				display: "fullscreen",
 				description:
 					"Almacén del centro es un lugar donde podrás conocer un poco de la historia y tradiciones de San Luis.",
 			},
 		}),
-		// TODO: Change baseURL when we'll have the domain
 		VitePluginSitemap({
-			baseUrl: "https://almacendelcentro.com",
+			baseUrl: "https://almacendelcentro.com.ar/",
 			contentBase: "public",
 			routes: routes,
 			urlGenHook: (config) => {
